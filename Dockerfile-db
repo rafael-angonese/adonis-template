@@ -1,0 +1,10 @@
+FROM postgres:17.4
+
+ENV POSTGRES_USER=admin
+ENV POSTGRES_PASSWORD=admin
+ENV POSTGRES_DB=adonis-template
+
+EXPOSE 5432
+
+# docker build -t adonis-template -f Dockerfile-db .
+# docker run -d --name postgres_adonis_container -p 5432:5432 adonis-template
